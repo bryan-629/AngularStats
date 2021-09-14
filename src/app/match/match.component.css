@@ -1,0 +1,58 @@
+.lupa{
+    font-size: 25px;
+}
+.font-russo{
+    font-family: 'Russo One', sans-serif; 
+    }
+.roboto{
+    font-family: 'Roboto', sans-serif; 
+   font-weight: bold;
+  }
+  .text-grey{
+    color:#444444;
+    }
+    .bg-gray{
+        background: #939393;
+        }
+    .text-gray{
+        color: #939393;
+    }
+    
+    .radius-10{
+        border-radius: 10px ;
+    }
+    .bg-content{
+        background-color: #27293D;
+        }
+    .bg-fondo{
+        background: #191926;
+    }
+    .bg-diamante{
+        background-color: #2ECACA;
+        }
+        .bg-gold{
+            background: #E4A400;
+            }
+.bg-legend{
+    background: rgb(240,84,130);
+    background: linear-gradient(211deg, rgba(88,37,155,1) 0%, rgba(251,153,1,1) 100%);
+}
+.bg-master{
+    background: rgb(240,84,130);
+    background: linear-gradient(211deg, rgba(198,83,234,1) 0%, rgba(62,29,129,1) 100%);
+    }
+    .bg-platinum{
+        background-color: #5081A0;
+        }
+    .bg-bronze{
+        background-color: #BE6F26;
+}
+.bg-silver{
+    background-color: #a0afb8;
+    }
+.text-green{
+    color: #82c91e;
+ }
+.bg-green{
+    background: rgb(65, 219, 65);
+}

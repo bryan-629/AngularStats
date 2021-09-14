@@ -1,0 +1,412 @@
+<div class="container-fluid ">
+    <div class="row">
+        <div class="col-12 my-1">
+            <div class="  d-flex justify-content-end navegador px-5">
+                <i class="fas fa-search text-white m-3 lupa"></i>
+            </div> 
+        </div>
+    </div>
+</div>
+<div class="container-fluid">
+    <div class="row mt-5">
+        <div class="col-12">
+            <h2 class="text-center font-russo text-white">{{matchModeTitle}}</h2>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12">
+            <p class="text-center text-gray">{{matchTime}}</p>
+        </div>
+    </div>
+    <div [ngSwitch]="bgLeage">
+        <div *ngSwitchCase = "'LEGUEND'">
+            <div class="row justify-content-center">
+                <div class="col-12">
+                    <div class="row justify-content-center">
+                        <div class="col-2">
+                            <div class=" text-center bg-legend radius-10">
+                                <div class="row">
+                                    <div class="col-12">
+                                        <h5 class="mb-0 font-russo text-grey mt-2">AVG. KD</h5>
+                                    </div>
+                                    <div class="col-12 mb-0">
+                                        <h1 class="font-russo mb-0 text-white mb-2 mt-1 mb-0">{{matchKdAvg}}</h1> <!--KD DE LA PARTIDA-->
+                                    </div>
+                                    <div class="col-12">
+                                        <h6 class="font-russo mb-0 text-white mb-2">{{matchLeague}}</h6> <!--KD DE LA PARTIDA-->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div *ngSwitchCase = "'MASTER'">
+            <div class="row justify-content-center">
+                <div class="col-12">
+                    <div class="row justify-content-center">
+                        <div class="col-2">
+                            <div class=" text-center bg-master radius-10">
+                                <div class="row">
+                                    <div class="col-12">
+                                        <h5 class="mb-0 font-russo text-grey mt-2">AVG. KD</h5>
+                                    </div>
+                                    <div class="col-12 mb-0">
+                                        <h1 class="font-russo mb-0 text-white mb-2 mt-1 mb-0">{{matchKdAvg}}</h1> <!--KD DE LA PARTIDA-->
+                                    </div>
+                                    <div class="col-12">
+                                        <h6 class="font-russo mb-0 text-white mb-2">{{matchLeague}}</h6> <!--KD DE LA PARTIDA-->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div *ngSwitchCase = "'DIAMOND'">
+            <div class="row justify-content-center">
+                <div class="col-12">
+                    <div class="row justify-content-center">
+                        <div class="col-2">
+                            <div class=" text-center bg-diamante radius-10">
+                                <div class="row">
+                                    <div class="col-12">
+                                        <h5 class="mb-0 font-russo text-grey mt-2">AVG. KD</h5>
+                                    </div>
+                                    <div class="col-12 mb-0">
+                                        <h1 class="font-russo mb-0 text-white mb-2 mt-1 mb-0">{{matchKdAvg}}</h1> <!--KD DE LA PARTIDA-->
+                                    </div>
+                                    <div class="col-12">
+                                        <h6 class="font-russo mb-0 text-white mb-2">{{matchLeague}}</h6> <!--KD DE LA PARTIDA-->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div *ngSwitchCase = "'PLATINUM'">
+            <div class="row justify-content-center">
+                <div class="col-12">
+                    <div class="row justify-content-center">
+                        <div class="col-2">
+                            <div class=" text-center bg-platinum radius-10">
+                                <div class="row">
+                                    <div class="col-12">
+                                        <h5 class="mb-0 font-russo text-grey mt-2">AVG. KD</h5>
+                                    </div>
+                                    <div class="col-12 mb-0">
+                                        <h1 class="font-russo mb-0 text-white mb-2 mt-1 mb-0">{{matchKdAvg}}</h1> <!--KD DE LA PARTIDA-->
+                                    </div>
+                                    <div class="col-12">
+                                        <h6 class="font-russo mb-0 text-white mb-2">{{matchLeague}}</h6> <!--KD DE LA PARTIDA-->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div *ngSwitchCase = "'GOLD'">
+            <div class="row justify-content-center">
+                <div class="col-12">
+                    <div class="row justify-content-center">
+                        <div class="col-2">
+                            <div class=" text-center bg-gold radius-10">
+                                <div class="row">
+                                    <div class="col-12">
+                                        <h5 class="mb-0 font-russo text-grey mt-2">AVG. KD</h5>
+                                    </div>
+                                    <div class="col-12 mb-0">
+                                        <h1 class="font-russo mb-0 text-white mb-2 mt-1 mb-0">{{matchKdAvg}}</h1> <!--KD DE LA PARTIDA-->
+                                    </div>
+                                    <div class="col-12">
+                                        <h6 class="font-russo mb-0 text-white mb-2">{{matchLeague}}</h6> <!--KD DE LA PARTIDA-->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div *ngSwitchCase = "'SILVER'">
+            <div class="row justify-content-center">
+                <div class="col-12">
+                    <div class="row justify-content-center">
+                        <div class="col-2">
+                            <div class=" text-center bg-silver radius-10">
+                                <div class="row">
+                                    <div class="col-12">
+                                        <h5 class="mb-0 font-russo text-grey mt-2">AVG. KD</h5>
+                                    </div>
+                                    <div class="col-12 mb-0">
+                                        <h1 class="font-russo mb-0 text-white mb-2 mt-1 mb-0">{{matchKdAvg}}</h1> <!--KD DE LA PARTIDA-->
+                                    </div>
+                                    <div class="col-12">
+                                        <h6 class="font-russo mb-0 text-white mb-2">{{matchLeague}}</h6> <!--KD DE LA PARTIDA-->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div *ngSwitchCase = "'BRONZE'">
+            <div class="row justify-content-center">
+                <div class="col-12">
+                    <div class="row justify-content-center">
+                        <div class="col-2">
+                            <div class=" text-center bg-bronze radius-10">
+                                <div class="row">
+                                    <div class="col-12">
+                                        <h5 class="mb-0 font-russo text-grey mt-2">AVG. KD</h5>
+                                    </div>
+                                    <div class="col-12 mb-0">
+                                        <h1 class="font-russo mb-0 text-white mb-2 mt-1 mb-0">{{matchKdAvg}}</h1> <!--KD DE LA PARTIDA-->
+                                    </div>
+                                    <div class="col-12">
+                                        <h6 class="font-russo mb-0 text-white mb-2">{{matchLeague}}</h6> <!--KD DE LA PARTIDA-->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row mt-5">
+        <div class="col-12">
+            <h2 class="text-center font-russo text-white">YOUR TEAM</h2>
+        </div>
+    </div>
+    <div>
+        
+    </div>
+    <div class="row justify-content-center">
+        <div class="col-6">
+            <div class="bg-content radius-10 py-3 px-5">
+                <div class="row">
+                    <div class="col-1">
+                        <div class=" text-center bg-gray mx-0 py-2 radius-10">
+                            <h3 class="font-russo mb-1 mt-2">{{this.yourTeam[0].placement}}</h3> <!--POSICION EN LA PARTIDA-->
+                        </div>
+                    </div>
+                    <div class="col-2">
+                        <div class=" text-center bg-fondo mx-0 radius-10">
+                            <div class="row">
+                                <div class="col-12 ">
+                                    <h6 class="font-russo text-grey mt-2">TEAM AVG</h6> <!--POSICION EN LA PARTIDA-->
+                                </div>
+                                <div class="col-12">
+                                    <h5 class="font-russo mb-1 text-white">{{data.teamKdAvg(this.yourTeam)}}</h5> <!--POSICION EN LA PARTIDA-->
+                                </div>
+                                
+                            </div>
+                            
+                        </div>
+                    </div>
+                    <div class="col-2">
+                        <div class=" text-center bg-fondo mx-0 radius-10">
+                            <div class="row">
+                                <div class="col-12 ">
+                                    <h6 class="font-russo text-grey mt-2">TEAM KILLS</h6> <!--POSICION EN LA PARTIDA-->
+                                </div>
+                                <div class="col-12">
+                                    <h5 class="font-russo mb-1 text-white">{{data.teamKills(this.yourTeam)}}</h5> <!--POSICION EN LA PARTIDA-->
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                        <div class=" radius-10 mt-1">
+                           <div class="row">
+                               <div class="col-2 ">
+                                   
+                               </div>
+                               <div class="col-2 ">
+                                   <h5 class="text-white text-center mb-0 mt-2 font-russo">KILLS</h5>
+                               </div>
+                               <div class="col-2 ">
+                                <h5 class="text-white text-center mb-0 mt-2 font-russo">DEATHS</h5>
+                            </div>
+                            <div class="col-2 ">
+                                <h5 class="text-white text-center mb-0 mt-2 font-russo">KD</h5>
+                            </div>
+                            <div class="col-2 ">
+                                <h5 class="text-white text-center mb-0 mt-2 font-russo">HEADSHOTS</h5>
+                            </div>
+                            <div class="col-2">
+                                <h5 class="text-white text-center mb-0 mt-2 font-russo">ASSIST</h5>
+                            </div>
+                            
+                           </div>
+                        </div>
+                    </div>
+                </div>
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="bg-fondo radius-10 mt-0">
+                                <div *ngFor = "let teamPlayer of yourTeam; let i = index">
+                                <div class="row">
+                                    <div class="col-2 px-4 py-2">
+                                        <h5 class="text-white mb-2 mt-2 font-russo">{{teamPlayer.name}}</h5>
+                                    </div>
+                                    <div class="col-2 px-4 py-2">
+                                        <h5 class="text-white text-center mb-2 mt-2 font-russo">{{teamPlayer.stats.kills.value}}</h5>
+                                    </div>
+                                    <div class="col-2 px-4 py-2">
+                                        <h5 class="text-white text-center mb-2 mt-2 font-russo">{{teamPlayer.stats.deaths.value}}</h5>
+                                    </div>
+                                    <div class="col-2 px-4 py-2">
+                                        <h5 class="text-white text-center mb-2 mt-2 font-russo">{{teamPlayer.stats.kdRatio.displayValue}}</h5>
+                                    </div>
+                                    <div class="col-2 px-4 py-2">
+                                        <h5 class="text-white text-center mb-2 mt-2 font-russo">{{teamPlayer.stats.kdRatio.displayValue}}</h5>
+                                    </div>
+                                    <div class="col-2 px-4 py-2">
+                                        <h5 class="text-white text-center mb-2 mt-2 font-russo">{{teamPlayer.stats.assists.displayValue}}</h5>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div> 
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12">
+            <h2 class="text-center text-white font-russo mt-5">MATCH RESULTS</h2>
+        </div>
+    </div>
+    
+    <div *ngFor = "let team of matchTeams; let i = index">
+        <div class="row justify-content-center mt-5">
+            <div class="col-6">
+                <div class="bg-content radius-10 py-3 px-5">
+                    <div class="row">
+                        <div class="col-1">
+                            <div *ngIf ="matchTeams[i][0].placement == 1">
+                                <div class=" text-center bg-green mx-0 py-2 radius-10">
+                                    <h3 class="font-russo mb-1 mt-2 text-white">{{matchTeams[i][0].placement}}</h3> <!--POSICION EN LA PARTIDA-->
+                                </div>
+                            </div>
+                            <div *ngIf ="matchTeams[i][0].placement != 1">
+                                <div class=" text-center bg-gray mx-0 py-2 radius-10">
+                                    <h3 class="font-russo mb-1 mt-2">{{matchTeams[i][0].placement}}</h3> <!--POSICION EN LA PARTIDA-->
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-2">
+                            <div class=" text-center bg-fondo mx-0 radius-10">
+                                <div class="row">
+                                    <div class="col-12 ">
+                                        <h6 class="font-russo  text-grey mt-2">TEAM AVG</h6> <!--POSICION EN LA PARTIDA-->
+                                    </div>
+                                    <div class="col-12">
+                                        <h5 class="font-russo mb-1 text-white">{{data.teamKdAvg(team)}}</h5> <!--POSICION EN LA PARTIDA-->
+                                    </div>
+                                </div>
+                                
+                            </div>
+                        </div>
+                        <div class="col-2">
+                            <div class=" text-center bg-fondo mx-0 radius-10">
+                                <div class="row">
+                                    <div class="col-12 ">
+                                        <h6 class="font-russo text-grey mt-2">TEAM KILLS</h6> <!--POSICION EN LA PARTIDA-->
+                                    </div>
+                                    <div class="col-12">
+                                        <h5 class="font-russo mb-1 text-white">{{data.teamKills(team)}}</h5> <!--POSICION EN LA PARTIDA-->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--<div class="col-2">
+                            <div class=" text-center bg-fondo mx-0 radius-10">
+                                <div class="row">
+                                    <div class="col-12 ">
+                                        <h6 class="font-russo text-grey mt-2">KD RANK</h6> 
+                                    </div>
+                                    <div class="col-12">
+                                        <h5 class="font-russo mb-1 text-white">24th</h5> 
+                                    </div>
+                                    
+                                </div>
+                                
+                            </div>
+                        </div>-->
+                    </div>
+                    <div class="row">
+                        <div class="col-12">
+                            <div class=" radius-10 mt-1">
+                               <div class="row">
+                                   <div class="col-2 ">
+                                       
+                                   </div>
+                                   <div class="col-2 ">
+                                       <h5 class="text-white text-center mb-0 mt-2 font-russo">KILLS</h5>
+                                   </div>
+                                   <div class="col-2 ">
+                                    <h5 class="text-white text-center mb-0 mt-2 font-russo">DEATHS</h5>
+                                </div>
+                                <div class="col-2 ">
+                                    <h5 class="text-white text-center mb-0 mt-2 font-russo">KD</h5>
+                                </div>
+                                <div class="col-2 ">
+                                    <h5 class="text-white text-center mb-0 mt-2 font-russo">HEADSHOTS</h5>
+                                </div>
+                                <div class="col-2">
+                                    <h5 class="text-white text-center mb-0 mt-2 font-russo">ASSISTS</h5>
+                                </div>
+                                
+                               </div>
+                            </div>
+                        </div>
+                    </div>
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="bg-fondo radius-10 mt-0 mb-0">
+                                    <div *ngFor = "let user of matchTeams[i]; let j = index">
+                                   <div class="row">
+                                       <div class="col-2 px-4 py-2">
+                                           <h5 class="text-white mb-3 mt-2 font-russo">{{user.name}}</h5>
+                                       </div>
+                                       <div class="col-2 px-4 py-2">
+                                           <h5 class="text-white text-center mb-2 mt-2 font-russo">{{user.stats.kills.value}}</h5>
+                                       </div>
+                                       <div class="col-2 px-4 py-2">
+                                        <h5 class="text-white text-center mb-2 mt-2 font-russo">{{user.stats.deaths.value}}</h5>
+                                    </div>
+                                    <div class="col-2 px-4 py-2">
+                                        <h5 class="text-white text-center mb-2 mt-2 font-russo">{{user.stats.kdRatio.displayValue}}</h5>
+                                    </div>
+                                    <div class="col-2 px-4 py-2">
+                                        <h5 class="text-white text-center mb-2 mt-2 font-russo">{{user.stats.headshots.value}}</h5>
+                                    </div>
+                                    <div class="col-2 px-4 py-2">
+                                        <h5 class="text-white text-center mb-2 mt-2 font-russo">{{user.stats.assists.value}}</h5>
+                                    </div>
+                                    
+                                   </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>

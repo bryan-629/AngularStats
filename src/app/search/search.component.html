@@ -1,0 +1,75 @@
+
+<style>
+    h1{
+        color: white;
+        font-family: 'Roboto', sans-serif; 
+    }
+    h4{
+        font-family: 'Russo One', sans-serif; 
+        font-weight: bold;
+        cursor: pointer;
+    }
+    input{
+        width: 600px;
+        text-align: center;
+        font-size: 28PX;
+    }
+    .relleno{
+        height: 35%;
+    }
+    .container-busqueda{
+       vertical-align: auto;
+        
+    }
+    button{
+        background: rgb(240,84,130);
+        background: linear-gradient(211deg, rgba(240,84,130,1) 0%, rgba(226,38,19,1) 100%);
+        color: white;
+        border-radius: 10px;
+        transition: all ease 0.3s;
+        border-style: none;
+        box-shadow:  1px 1px 18px 0px rgba(226, 38, 19, 0.75);
+    }
+    button:hover{
+        transition: all ease 0.3s;
+        box-shadow: none;
+        color: white;
+       
+        box-shadow:  1px 1px 40px 0px rgba(226, 38, 19, 0.75);
+    }
+    button:active{
+        transform: scale(.98);
+        box-shadow: none;
+        box-shadow:  1px 1px 18px 0px rgba(226, 38, 19, 0.75);
+    }
+    .form-control-lg{
+        border-radius: 10px;
+    }
+    .resultados{
+        border-radius: 10px;
+        width: 50%;
+        max-width: 600px; 
+    }
+    
+</style>
+<div class="relleno"></div>
+<div class="container container-busqueda">
+    <div class="row contenido">
+        <h1 class="text-center">SEARCH YOUR PROFILE</h1>
+        <div class="">
+            <div class="form-group d-flex flex-column align-items-center">
+                <input class="form-control form-control-lg  my-3" type="text" placeholder="SEARCH" id="inputLarge" (keyup)="changeInput($event)">
+                <button type="button"  class="btn-lg w-25 m-2">SEARCH</button>
+            </div>  
+        </div>
+        <p class="text-center text-white my-3">TRY TO INSERT YOUR ACTIVISION ID</p>
+        
+    </div>
+    <div class="row justify-content-center mt-2">
+        <div class=" col-6 bg-white resultados mb-5 mx-auto" >
+            <div class="my-3"  *ngFor="let users of dataService.data">
+                <h4  class="ml-5 p-2" (click)="onClick(users.platformUserIdentifier)"><img class="px-3" src="http://127.0.0.1/stats/img/icon.png" style="width: 60px;" alt="">{{users.platformUserIdentifier}}</h4>
+            </div>
+        </div>
+    </div>
+</div>

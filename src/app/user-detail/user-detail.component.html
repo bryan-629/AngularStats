@@ -1,0 +1,855 @@
+
+
+<div class="container-fluid ">
+    <div class="row mt-2">
+        <div class="col-12 my-1">
+            <div class="  d-flex justify-content-end navegador px-5">
+                <i class="fas fa-search text-white m-3 lupa"></i>
+            </div> 
+        </div>
+    </div>
+</div>
+<div class="container-fluid">
+    <div class="row px-3"> <!-- Separa el main del slide-->
+        <div class="col-2 px-4"> 
+            <div class="slide px-5 py-4 "> <!--SLIDE dos columnas-->
+                <div class="row">
+                    <h4 class="text-white text-center font-russo my-4">{{userName}}</h4>
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                        <div [ngSwitch]="userKDBg">
+                            <div *ngSwitchCase = "'LEGEND'">
+                                <div class="bg-legend radius-10 d-flex flex-column align-items-center justify-content-center pt-2"> <!--CONTENEDOR KD-->
+                                    <h4 class="text-center title mb-1">KD</h4>
+                                    <div class="bg-white radius-10 ">
+                                        <h2 class="font-russo text-center my-2 mx-4 text-legend">{{userKD}}</h2>
+                                    </div>
+                                    <div>
+                                        <h5 class="text-white roboto my-2">{{userKDLiga}}</h5>
+                                    </div>
+                                </div>
+                            </div>
+                            <div *ngSwitchCase = "'MASTER'">
+                                <div class="bg-master radius-10 d-flex flex-column align-items-center justify-content-center pt-2"> <!--CONTENEDOR KD-->
+                                    <h4 class="text-center title mb-1">KD</h4>
+                                    <div class="bg-white radius-10 ">
+                                        <h2 class="font-russo text-center my-2 mx-4 text-master">{{userKD}}</h2>
+                                    </div>
+                                    <div>
+                                        <h5 class="text-white roboto my-2">{{userKDLiga}}</h5>
+                                    </div>
+                                </div>
+                            </div>
+                            <div *ngSwitchCase = "'DIAMOND'">
+                                <div class="bg-diamante radius-10 d-flex flex-column align-items-center justify-content-center pt-2"> <!--CONTENEDOR KD-->
+                                    <h4 class="text-center title mb-1">KD</h4>
+                                    <div class="bg-white radius-10 ">
+                                        <h2 class="font-russo text-center my-2 mx-4 text-diamante">{{userKD}}</h2>
+                                    </div>
+                                    <div>
+                                        <h5 class="text-white roboto my-2">{{userKDLiga}}</h5>
+                                    </div>
+                                </div>
+                            </div>
+                            <div *ngSwitchCase = "'PLATINUM'">
+                                <div class="bg-platinum radius-10 d-flex flex-column align-items-center justify-content-center pt-2"> <!--CONTENEDOR KD-->
+                                    <h4 class="text-center title mb-1">KD</h4>
+                                    <div class="bg-white radius-10 ">
+                                        <h2 class="font-russo text-center my-2 mx-4 text-platinum">{{userKD}}</h2>
+                                    </div>
+                                    <div>
+                                        <h5 class="text-white roboto my-2">{{userKDLiga}}</h5>
+                                    </div>
+                                </div>
+                            </div>
+                            <div *ngSwitchCase = "'GOLD'">
+                                <div class="bg-gold radius-10 d-flex flex-column align-items-center justify-content-center pt-2"> <!--CONTENEDOR KD-->
+                                    <h4 class="text-center title mb-1">KD</h4>
+                                    <div class="bg-white radius-10 ">
+                                        <h2 class="font-russo text-center my-2 mx-4 text-gold">{{userKD}}</h2>
+                                    </div>
+                                    <div>
+                                        <h5 class="text-white roboto my-2">{{userKDLiga}}</h5>
+                                    </div>
+                                </div>
+                            </div>
+                            <div *ngSwitchCase = "'SILVER'">
+                                <div class="bg-silver radius-10 d-flex flex-column align-items-center justify-content-center pt-2"> <!--CONTENEDOR DIAMANTE-->
+                                    <h4 class="text-center title mb-1">KD</h4>
+                                    <div class="bg-white radius-10 ">
+                                        <h2 class="font-russo text-center my-2 mx-4 text-silver">{{userKD}}</h2>
+                                    </div>
+                                    <div>
+                                        <h5 class="text-white roboto my-2">{{userKDLiga}}</h5>
+                                    </div>
+                                </div>
+                            </div>
+                            <div *ngSwitchCase = "'BRONZE'">
+                                <div class="bg-bronze radius-10 d-flex flex-column align-items-center justify-content-center pt-2"> <!--CONTENEDOR DIAMANTE-->
+                                    <h4 class="text-center title mb-1">KD</h4>
+                                    <div class="bg-white radius-10 ">
+                                        <h2 class="font-russo text-center my-2 mx-4 text-bronze">{{userKD}}</h2>
+                                    </div>
+                                    <div>
+                                        <h5 class="text-white roboto my-2">{{userKDLiga}}</h5>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+                <div class="row mt-2">
+                    <div class="col-6 "> <!-- WINS-->
+                        <div [ngSwitch]="userWinsBg">
+                            <div *ngSwitchCase = "'LEGEND'">
+                                <div class="bg-legend radius-10 px-2 pt-2 pb-1 mt-4">
+                                    <p class="text-center title mb-2">WINS</p>
+                                    <div class="bg-white mx-2 py-1 radius-10 d-flex align-items-center justify-content-center">
+                                        <h4 class="font-russo text-center mb-0 text-legend">{{userWins}}</h4>
+                                    </div>
+                                    <div>
+                                        <p class="text-white text-center roboto mt-1 mb-2 ">{{userWinsLiga}}</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div *ngSwitchCase = "'MASTER'">
+                                <div class="bg-master radius-10 px-2 pt-2 pb-1 mt-4">
+                                    <p class="text-center title mb-2">WINS</p>
+                                    <div class="bg-white mx-2 py-1 radius-10 d-flex align-items-center justify-content-center">
+                                        <h4 class="font-russo text-center mb-0 text-master">{{userWins}}</h4>
+                                    </div>
+                                    <div>
+                                        <p class="text-white text-center roboto mt-1 mb-2">{{userWinsLiga}}</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div *ngSwitchCase = "'DIAMOND'">
+                                <div class="bg-diamante radius-10 px-2 pt-2 pb-1 mt-4">
+                                    <p class="text-center title mb-2">WINS</p>
+                                    <div class="bg-white mx-2 py-1 radius-10 d-flex align-items-center justify-content-center">
+                                        <h4 class="font-russo text-center mb-0 text-diamante">{{userWins}}</h4>
+                                    </div>
+                                    <div>
+                                        <p class="text-white text-center roboto mt-1 mb-2">{{userWinsLiga}}</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div *ngSwitchCase = "'PLATINUM'">
+                                <div class="bg-platinum radius-10 px-2 pt-2 pb-1 mt-4">
+                                    <p class="text-center title mb-2">WINS</p>
+                                    <div class="bg-white mx-2 py-1 radius-10 d-flex align-items-center justify-content-center">
+                                        <h4 class="font-russo text-center mb-0 text-platinum ">{{userWins}}</h4>
+                                    </div>
+                                    <div>
+                                        <p class="text-white text-center roboto mt-1 mb-2 text-14">{{userWinsLiga}}</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div *ngSwitchCase = "'GOLD'">
+                                <div class="bg-gold radius-10 px-2 pt-2 pb-1 mt-4">
+                                    <p class="text-center title mb-2">WINS</p>
+                                    <div class="bg-white mx-2 py-1 radius-10 d-flex align-items-center justify-content-center">
+                                        <h4 class="font-russo text-center mb-0 text-gold">{{userWins}}</h4>
+                                    </div>
+                                    <div>
+                                        <p class="text-white text-center roboto mt-1 mb-2">{{userWinsLiga}}</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div *ngSwitchCase = "'SILVER'">
+                                <div class="bg-silver radius-10 px-2 pt-2 pb-1 mt-4">
+                                    <p class="text-center title mb-2">WINS</p>
+                                    <div class="bg-white mx-2 py-1 radius-10 d-flex align-items-center justify-content-center">
+                                        <h4 class="font-russo text-center mb-0 text-silver">{{userWins}}</h4>
+                                    </div>
+                                    <div>
+                                        <p class="text-white text-center roboto mt-1 mb-2">{{userWinsLiga}}</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div *ngSwitchCase = "'BRONZE'">
+                                <div class="bg-bronze radius-10 px-2 pt-2 pb-1 mt-4">
+                                    <p class="text-center title mb-2">WINS</p>
+                                    <div class="bg-white mx-2 py-1 radius-10 d-flex align-items-center justify-content-center">
+                                        <h4 class="font-russo text-center mb-0 text-bronze">{{userWins}}</h4>
+                                    </div>
+                                    <div>
+                                        <p class="text-white text-center roboto mt-1 mb-2">{{userWinsLiga}}</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-6 "><!--KD/WEEK-->
+                        <div [ngSwitch]="userWeekKDBg">
+                            <div *ngSwitchCase = "'LEGEND'">
+                                <div class="bg-legend radius-10 px-2 pt-2 pb-1 mt-4">
+                                    <P class="text-center title mb-2">KD/WEEK</P>
+                                    <div class="bg-white mx-2 py-1 radius-10 d-flex align-items-center justify-content-center">
+                                        <h4 class="font-russo text-center mb-0 text-legend">{{userWeekKD}}</h4>
+                                    </div>
+                                    <div>
+                                        <p class="text-white text-center roboto mt-1 mb-2">{{userWeekKDLiga}}</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div *ngSwitchCase = "'MASTER'">
+                                <div class="bg-master radius-10 px-2 pt-2 pb-1 mt-4">
+                                    <P class="text-center title mb-2">KD/WEEK</P>
+                                    <div class="bg-white mx-2 py-1 radius-10 d-flex align-items-center justify-content-center">
+                                        <h4 class="font-russo text-center mb-0 text-master">{{userWeekKD}}</h4>
+                                    </div>
+                                    <div>
+                                        <p class="text-white text-center roboto mt-1 mb-2">{{userWeekKDLiga}}</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div *ngSwitchCase = "'DIAMOND'">
+                                <div class="bg-diamante radius-10 px-2 pt-2 pb-1 mt-4">
+                                    <P class="text-center title mb-2">KD/WEEK</P>
+                                    <div class="bg-white mx-2 py-1 radius-10 d-flex align-items-center justify-content-center">
+                                        <h4 class="font-russo text-center mb-0 text-diamante">{{userWeekKD}}</h4>
+                                    </div>
+                                    <div>
+                                        <p class="text-white text-center roboto mt-1 mb-2">{{userWeekKDLiga}}</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div *ngSwitchCase = "'PLATINUM'">
+                                <div class="bg-platinum radius-10 px-2 pt-2 pb-1 mt-4">
+                                    <P class="text-center title mb-2">KD/WEEK</P>
+                                    <div class="bg-white mx-2 py-1 radius-10 d-flex align-items-center justify-content-center">
+                                        <h4 class="font-russo text-center mb-0 text-platinum">{{userWeekKD}}</h4>
+                                    </div>
+                                    <div>
+                                        <p class="text-white text-center roboto mt-1 mb-2 text-14">{{userWeekKDLiga}}</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div *ngSwitchCase = "'GOLD'">
+                                <div class="bg-gold radius-10 px-2 pt-2 pb-1 mt-4">
+                                    <P class="text-center title mb-2">KD/WEEK</P>
+                                    <div class="bg-white mx-2 py-1 radius-10 d-flex align-items-center justify-content-center">
+                                        <h4 class="font-russo text-center mb-0 text-gold">{{userWeekKD}}</h4>
+                                    </div>
+                                    <div>
+                                        <p class="text-white text-center roboto mt-1 mb-2">{{userWeekKDLiga}}</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div *ngSwitchCase = "'SILVER'">
+                                <div class="bg-silver radius-10 px-2 pt-2 pb-1 mt-4">
+                                    <P class="text-center title mb-2">KD/WEEK</P>
+                                    <div class="bg-white mx-2 py-1 radius-10 d-flex align-items-center justify-content-center">
+                                        <h4 class="font-russo text-center mb-0 text-silver">{{userWeekKD}}</h4>
+                                    </div>
+                                    <div>
+                                        <p class="text-white text-center roboto mt-1 mb-2">{{userWeekKDLiga}}</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div *ngSwitchCase = "'BRONZE'">
+                                <div class="bg-bronze radius-10 px-2 pt-2 pb-1 mt-4">
+                                    <P class="text-center title mb-2">KD/WEEK</P>
+                                    <div class="bg-white mx-2 py-1 radius-10 d-flex align-items-center justify-content-center">
+                                        <h4 class="font-russo text-center mb-0 text-bronze">{{userWeekKD}}</h4>
+                                    </div>
+                                    <div>
+                                        <p class="text-white text-center roboto mt-1 mb-2">{{userWeekKDLiga}}</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+                <div class="row mt-2">
+                    <div class="col-6 "> <!-- KILLS-->
+                        <div [ngSwitch]="userKillsBg">
+                            <div *ngSwitchCase = "'LEGEND'">
+                                <div class="bg-legend radius-10 px-2 pt-2 pb-1 mt-4">
+                                    <p class="text-center title mb-2">KILLS</p>
+                                    <div class="bg-white mx-2 py-1 radius-10 d-flex align-items-center justify-content-center">
+                                        <h4 class="font-russo text-center mb-0 text-legend">{{userKills}}</h4>
+                                    </div>
+                                    <div>
+                                        <p class="text-white text-center roboto mt-1 mb-2">{{userKillsLiga}}</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div *ngSwitchCase = "'MASTER'">
+                                <div class="bg-master radius-10 px-2 pt-2 pb-1 mt-4">
+                                    <p class="text-center title mb-2">KILLS</p>
+                                    <div class="bg-white mx-2 py-1 radius-10 d-flex align-items-center justify-content-center">
+                                        <h4 class="font-russo text-center mb-0 text-master">{{userKills}}</h4>
+                                    </div>
+                                    <div>
+                                        <p class="text-white text-center roboto mt-1 mb-2">{{userKillsLiga}}</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div *ngSwitchCase = "'DIAMOND'">
+                                <div class="bg-diamante radius-10 px-2 pt-2 pb-1 mt-4">
+                                    <p class="text-center title mb-2">KILLS</p>
+                                    <div class="bg-white mx-2 py-1 radius-10 d-flex align-items-center justify-content-center">
+                                        <h4 class="font-russo text-center mb-0 text-diamante">{{userKills}}</h4>
+                                    </div>
+                                    <div>
+                                        <p class="text-white text-center roboto mt-1 mb-2">{{userKillsLiga}}</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div *ngSwitchCase = "'PLATINUM'">
+                                <div class="bg-platinum radius-10 px-2 pt-2 pb-1 mt-4">
+                                    <p class="text-center title mb-2">KILLS</p>
+                                    <div class="bg-white mx-2 py-1 radius-10 d-flex align-items-center justify-content-center">
+                                        <h4 class="font-russo text-center mb-0 text-platinum">{{userKills}}</h4>
+                                    </div>
+                                    <div>
+                                        <p class="text-white text-center roboto mt-1 mb-2 text-14">{{userKillsLiga}}</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div *ngSwitchCase = "'GOLD'">
+                                <div class="bg-gold radius-10 px-2 pt-2 pb-1 mt-4">
+                                    <p class="text-center title mb-2">KILLS</p>
+                                    <div class="bg-white mx-2 py-1 radius-10 d-flex align-items-center justify-content-center">
+                                        <h4 class="font-russo text-center mb-0 text-gold">{{userKills}}</h4>
+                                    </div>
+                                    <div>
+                                        <p class="text-white text-center roboto mt-1 mb-2">{{userKillsLiga}}</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div *ngSwitchCase = "'SILVER'">
+                                <div class="bg-silver radius-10 px-2 pt-2 pb-1 mt-4">
+                                    <p class="text-center title mb-2">KILLS</p>
+                                    <div class="bg-white mx-2 py-1 radius-10 d-flex align-items-center justify-content-center">
+                                        <h4 class="font-russo text-center mb-0 text-silver">{{userKills}}</h4>
+                                    </div>
+                                    <div>
+                                        <p class="text-white text-center roboto mt-1 mb-2">{{userKillsLiga}}</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div *ngSwitchCase = "'BRONZE'">
+                                <div class="bg-bronze radius-10 px-2 pt-2 pb-1 mt-4">
+                                    <p class="text-center title mb-2">KILLS</p>
+                                    <div class="bg-white mx-2 py-1 radius-10 d-flex align-items-center justify-content-center">
+                                        <h4 class="font-russo text-center mb-0 text-bronze">{{userKills}}</h4>
+                                    </div>
+                                    <div>
+                                        <p class="text-white text-center roboto mt-1 mb-2">{{userKillsLiga}}</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <div class="col-6 "><!--%WINS-->
+                        <div [ngSwitch]="userRatioWinsBg">
+                            <div *ngSwitchCase = "'LEGEND'">
+                                <div class="bg-legend radius-10 px-2 pt-2 pb-1 mt-4">
+                                    <p class="text-center title mb-2">%WINS</p>
+                                    <div class="bg-white mx-2 py-1 radius-10 d-flex align-items-center justify-content-center">
+                                        <h4 class="font-russo text-center mb-0 text-legend">{{userRatioWins}}</h4>
+                                    </div>
+                                    <div>
+                                        <p class="text-white text-center roboto mt-1 mb-2">{{userRatioWinsLiga}}</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div *ngSwitchCase = "'MASTER'">
+                                <div class="bg-master radius-10 px-2 pt-2 pb-1 mt-4">
+                                    <p class="text-center title mb-2">%WINS</p>
+                                    <div class="bg-white mx-2 py-1 radius-10 d-flex align-items-center justify-content-center">
+                                        <h4 class="font-russo text-center mb-0 text-master">{{userRatioWins}}</h4>
+                                    </div>
+                                    <div>
+                                        <p class="text-white text-center roboto mt-1 mb-2">{{userRatioWinsLiga}}</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div *ngSwitchCase = "'DIAMOND'">
+                                <div class="bg-diamante radius-10 px-2 pt-2 pb-1 mt-4">
+                                    <p class="text-center title mb-2">%WINS</p>
+                                    <div class="bg-white mx-2 py-1 radius-10 d-flex align-items-center justify-content-center">
+                                        <h4 class="font-russo text-center mb-0 text-diamante">{{userRatioWins}}</h4>
+                                    </div>
+                                    <div>
+                                        <p class="text-white text-center roboto mt-1 mb-2">{{userRatioWinsLiga}}</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div *ngSwitchCase = "'PLATINUM'">
+                                <div class="bg-platinum radius-10 px-2 pt-2 pb-1 mt-4">
+                                    <p class="text-center title mb-2">%WINS</p>
+                                    <div class="bg-white mx-2 py-1 radius-10 d-flex align-items-center justify-content-center">
+                                        <h4 class="font-russo text-center mb-0 text-platinum">{{userRatioWins}}</h4>
+                                    </div>
+                                    <div>
+                                        <p class="text-white text-center roboto mt-1 mb-2 text-14">{{userRatioWinsLiga}}</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div *ngSwitchCase = "'GOLD'">
+                                <div class="bg-gold radius-10 px-2 pt-2 pb-1 mt-4">
+                                    <p class="text-center title mb-2">%WINS</p>
+                                    <div class="bg-white mx-2 py-1 radius-10 d-flex align-items-center justify-content-center">
+                                        <h4 class="font-russo text-center mb-0 text-gold">{{userRatioWins}}</h4>
+                                    </div>
+                                    <div>
+                                        <p class="text-white text-center roboto mt-1 mb-2">{{userRatioWinsLiga}}</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div *ngSwitchCase = "'SILVER'">
+                                <div class="bg-silver radius-10 px-2 pt-2 pb-1 mt-4">
+                                    <p class="text-center title mb-2">%WINS</p>
+                                    <div class="bg-white mx-2 py-1 radius-10 d-flex align-items-center justify-content-center">
+                                        <h4 class="font-russo text-center mb-0 text-silver">{{userRatioWins}}</h4>
+                                    </div>
+                                    <div>
+                                        <p class="text-white text-center roboto mt-1 mb-2">{{userRatioWinsLiga}}</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div *ngSwitchCase = "'BRONZE'">
+                                <div class="bg-bronze radius-10 px-2 pt-2 pb-1 mt-4">
+                                    <p class="text-center title mb-2">%WINS</p>
+                                    <div class="bg-white mx-2 py-1 radius-10 d-flex align-items-center justify-content-center">
+                                        <h4 class="font-russo text-center mb-0 text-bronze">{{userRatioWins}}</h4>
+                                    </div>
+                                    <div>
+                                        <p class="text-white text-center roboto mt-1 mb-2">{{userRatioWinsLiga}}</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+                <div class="row mt-2">
+                    <div class="col-6 "> <!-- Scoremin-->
+                        <div [ngSwitch]="userScoreMinBg">
+                            <div *ngSwitchCase = "'LEGEND'">
+                                <div class="bg-legend radius-10 px-2 pt-2 pb-1 mt-4">
+                                    <p class="text-center title mb-2">SCORE/MIN</p>
+                                    <div class="bg-white mx-2 py-1 radius-10 d-flex align-items-center justify-content-center">
+                                        <h4 class="font-russo text-center mb-0 text-legend">{{userScoreMin}}</h4>
+                                    </div>
+                                    <div>
+                                        <p class="text-white text-center roboto mt-1 mb-2">{{userScoreMinLiga}}</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div *ngSwitchCase = "'MASTER'">
+                                <div class="bg-master radius-10 px-2 pt-2 pb-1 mt-4">
+                                    <p class="text-center title mb-2">SCORE/MIN</p>
+                                    <div class="bg-white mx-2 py-1 radius-10 d-flex align-items-center justify-content-center">
+                                        <h4 class="font-russo text-center mb-0 text-master">{{userScoreMin}}</h4>
+                                    </div>
+                                    <div>
+                                        <p class="text-white text-center roboto mt-1 mb-2">{{userScoreMinLiga}}</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div *ngSwitchCase = "'DIAMOND'">
+                                <div class="bg-diamante radius-10 px-2 pt-2 pb-1 mt-4">
+                                    <p class="text-center title mb-2">SCORE/MIN</p>
+                                    <div class="bg-white mx-2 py-1 radius-10 d-flex align-items-center justify-content-center">
+                                        <h4 class="font-russo text-center mb-0 text-diamante">{{userScoreMin}}</h4>
+                                    </div>
+                                    <div>
+                                        <p class="text-white text-center roboto mt-1 mb-2">{{userScoreMinLiga}}</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div *ngSwitchCase = "'PLATINUM'">
+                                <div class="bg-platinum radius-10 px-2 pt-2 pb-1 mt-4">
+                                    <p class="text-center title mb-2">SCORE/MIN</p>
+                                    <div class="bg-white mx-2 py-1 radius-10 d-flex align-items-center justify-content-center">
+                                        <h4 class="font-russo text-center mb-0 text-platinum">{{userScoreMin}}</h4>
+                                    </div>
+                                    <div>
+                                        <p class="text-white text-center roboto mt-1 mb-2 text-14">{{userScoreMinLiga}}</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div *ngSwitchCase = "'GOLD'">
+                                <div class="bg-gold radius-10 px-2 pt-2 pb-1 mt-4">
+                                    <p class="text-center title mb-2">SCORE/MIN</p>
+                                    <div class="bg-white mx-2 py-1 radius-10 d-flex align-items-center justify-content-center">
+                                        <h4 class="font-russo text-center mb-0 text-gold">{{userScoreMin}}</h4>
+                                    </div>
+                                    <div>
+                                        <p class="text-white text-center roboto mt-1 mb-2">{{userScoreMinLiga}}</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div *ngSwitchCase = "'SILVER'">
+                                <div class="bg-silver radius-10 px-2 pt-2 pb-1 mt-4">
+                                    <p class="text-center title mb-2">SCORE/MIN</p>
+                                    <div class="bg-white mx-2 py-1 radius-10 d-flex align-items-center justify-content-center">
+                                        <h4 class="font-russo text-center mb-0 text-silver">{{userScoreMin}}</h4>
+                                    </div>
+                                    <div>
+                                        <p class="text-white text-center roboto mt-1 mb-2">{{userScoreMinLiga}}</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div *ngSwitchCase = "'BRONZE'">
+                                <div class="bg-bronze radius-10 px-2 pt-2 pb-1 mt-4">
+                                    <p class="text-center title mb-2">SCORE/MIN</p>
+                                    <div class="bg-white mx-2 py-1 radius-10 d-flex align-items-center justify-content-center">
+                                        <h4 class="font-russo text-center mb-0 text-master">{{userScoreMin}}</h4>
+                                    </div>
+                                    <div>
+                                        <p class="text-white text-center roboto mt-1 mb-2">{{userScoreMinLiga}}</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <div class="col-6 "><!--TOP 10-->
+                        <div [ngSwitch]="userTop10Bg">
+                            <div *ngSwitchCase = "'LEGEND'">
+                                <div class="bg-legend radius-10 px-2 pt-2 pb-1 mt-4">
+                                    <p class="text-center title mb-2">TOP 10</p>
+                                    <div class="bg-white mx-2 py-1 radius-10 d-flex align-items-center justify-content-center">
+                                        <h4 class="font-russo text-center mb-0 text-legend">{{userTop10}}</h4>
+                                    </div>
+                                    <div>
+                                        <p class="text-white text-center roboto mt-1 mb-2">{{userTop10Liga}}</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div *ngSwitchCase = "'MASTER'">
+                                <div class="bg-master radius-10 px-2 pt-2 pb-1 mt-4">
+                                    <p class="text-center title mb-2">TOP 10</p>
+                                    <div class="bg-white mx-2 py-1 radius-10 d-flex align-items-center justify-content-center">
+                                        <h4 class="font-russo text-center mb-0 text-master">{{userTop10}}</h4>
+                                    </div>
+                                    <div>
+                                        <p class="text-white text-center roboto mt-1 mb-2">{{userTop10Liga}}</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div *ngSwitchCase = "'DIAMOND'">
+                                <div class="bg-diamante radius-10 px-2 pt-2 pb-1 mt-4">
+                                    <p class="text-center title mb-2">TOP 10</p>
+                                    <div class="bg-white mx-2 py-1 radius-10 d-flex align-items-center justify-content-center">
+                                        <h4 class="font-russo text-center mb-0 text-diamante">{{userTop10}}</h4>
+                                    </div>
+                                    <div>
+                                        <p class="text-white text-center roboto mt-1 mb-2">{{userTop10Liga}}</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div *ngSwitchCase = "'PLATINUM'">
+                                <div class="bg-platinum radius-10 px-2 pt-2 pb-1 mt-4">
+                                    <p class="text-center title mb-2">TOP 10</p>
+                                    <div class="bg-white mx-2 py-1 radius-10 d-flex align-items-center justify-content-center">
+                                        <h4 class="font-russo text-center mb-0 text-platinum">{{userTop10}}</h4>
+                                    </div>
+                                    <div>
+                                        <p class="text-white text-center roboto mt-1 mb-2 text-14">{{userTop10Liga}}</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div *ngSwitchCase = "'GOLD'">
+                                <div class="bg-gold radius-10 px-2 pt-2 pb-1 mt-4">
+                                    <p class="text-center title mb-2">TOP 10</p>
+                                    <div class="bg-white mx-2 py-1 radius-10 d-flex align-items-center justify-content-center">
+                                        <h4 class="font-russo text-center mb-0 text-gold">{{userTop10}}</h4>
+                                    </div>
+                                    <div>
+                                        <p class="text-white text-center roboto mt-1 mb-2">{{userTop10Liga}}</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div *ngSwitchCase = "'SILVER'">
+                                <div class="bg-silver radius-10 px-2 pt-2 pb-1 mt-4">
+                                    <p class="text-center title mb-2">TOP 10</p>
+                                    <div class="bg-white mx-2 py-1 radius-10 d-flex align-items-center justify-content-center">
+                                        <h4 class="font-russo text-center mb-0 text-silver">{{userTop10}}</h4>
+                                    </div>
+                                    <div>
+                                        <p class="text-white text-center roboto mt-1 mb-2">{{userTop10Liga}}</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div *ngSwitchCase = "'BRONZE'">
+                                <div class="bg-bronze radius-10 px-2 pt-2 pb-1 mt-4">
+                                    <p class="text-center title mb-2">TOP 10</p>
+                                    <div class="bg-white mx-2 py-1 radius-10 d-flex align-items-center justify-content-center">
+                                        <h4 class="font-russo text-center mb-0 text-bronze">{{userTop10}}</h4>
+                                    </div>
+                                    <div>
+                                        <p class="text-white text-center roboto mt-1 mb-2">{{userTop10Liga}}</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+                <div class="row mt-4 "><!--DEATHS-->
+                    <div class="col-12 align-items-center justify-content-center">
+                        <h4 class="mb-0 text-center text-white font-russo">DEATHS:</h4>
+                    </div>
+                </div>
+                <div class="row ">
+                    <div class="col-12 align-items-center justify-content-center">
+                        <h4 class="mb-0 text-center text-white font-russo">{{userDeaths}}</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="col-10  px-3"> <!--Las 10 cols pertenecen a todo el main-->
+            <div class=" main"><!--MAIN-->
+                <div class="container-fluid">
+                    <div class="row "> <!--primera fila de chats-->
+                        <div class="col-12 ">
+                            <div class="bg-content  radius-10 chart1 ">
+                                <canvas id="canvasPrincipal"  height="45"></canvas>
+
+                            </div>
+                        </div>
+                    </div>
+                <div class="row mt-4">
+                    <div class="col-6"> <!--Segunda fila de charts-->
+                        <div class=" chart1 p-2 radius-10 bg-content ">
+                                <canvas id="canvasLine" height="90px"></canvas>
+                        </div>
+                    </div>
+                    <div class="col-6 ">
+                        <div class="chart1 p-2 radius-10 bg-content">
+                            <canvas id="canvas" height="90PX"></canvas>
+                        </div>
+                    </div>
+                </div>
+                
+
+                <div *ngFor ="let match of matchesData; let i = index"> 
+                    <div *ngIf = "i == 0">
+                        <div class="row mt-5 mb-2">
+                            <div class="col-12">
+                                <h3 class="text-white font-russo text-center">{{data.parseFecha(match.metadata.timestamp).toDateString()}}</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div *ngIf = "i != 0 && data.parseFecha(this.matchesData[i-1].metadata.timestamp).toLocaleDateString() != data.parseFecha(match.metadata.timestamp).toLocaleDateString()">
+                            <div class="row mt-5 mb-2">
+                                <div class="col-12">
+                                    <h3 class="text-white font-russo text-center">{{data.parseFecha(match.metadata.timestamp).toDateString()}}</h3>
+                                </div>
+                            </div>
+                    </div>
+                    <div class="row match-data mb-4"> <!--MATCH DATA-->
+                        <div class="col-12">
+                            <div class="bg-content py-1 radius-10" (click)="getMatch(match.attributes.id, match.attributes.avgKd.pct)">
+                                <div class="row">
+                                    <div class="col-5 py-2">
+                                        <div class="row px-4">
+                                            <div class="col-3 p-0">
+                                                <h5 class="text-white text-center font-russo mb-0 ">{{match.metadata.modeName}}</h5> <!--Modo de juego-->
+                                            </div>
+                                            <div class="col-6 p-0">
+                                                <p class="text-gray mb-0 "> {{data.parseFecha(match.metadata.timestamp).toLocaleString()}}</p><!--FECHA-->
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-12 mb-3">
+                                        <div class="row px-4">
+                                            <div class="col-2 ">
+                                                <div class="row justify-content-center ">
+                                                    <div class="col-5">
+                                                        <div class=" text-center bg-gray mx-0 py-2 radius-10">
+                                                            <h3 class="font-russo mb-1 mt-2">{{match.segments[0].metadata.placement}}</h3> <!--POSICION EN LA PARTIDA-->
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-6 px-0">
+                                                        <div [ngSwitch] ="data.calcColor(data.calcPercentile(match.attributes.avgKd.pct))">
+                                                            <div *ngSwitchCase = "'LEGEND'">
+                                                                <div class=" text-center bg-legend radius-10">
+                                                                    <div class="row">
+                                                                        <div class="col-12">
+                                                                            <h6 class="mb-0 font-russo text-grey mt-1">AVG. KD</h6>
+                                                                        </div>
+                                                                        <div class="col-12">
+                                                                            <h4 class="font-russo mb-0 text-white mb-2 mt-1">{{match.attributes.avgKd.kd}}</h4> <!--KD DE LA PARTIDA-->
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div *ngSwitchCase = "'MASTER'">
+                                                                <div class=" text-center bg-legend radius-10">
+                                                                    <div class="row">
+                                                                        <div class="col-12">
+                                                                            <h6 class="mb-0 font-russo text-grey mt-1">AVG. KD</h6>
+                                                                        </div>
+                                                                        <div class="col-12">
+                                                                            <h4 class="font-russo mb-0 text-white mb-2 mt-1">{{match.attributes.avgKd.kd}}</h4> <!--KD DE LA PARTIDA-->
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div *ngSwitchCase = "'DIAMOND'">
+                                                                <div class=" text-center bg-diamante radius-10">
+                                                                    <div class="row">
+                                                                        <div class="col-12">
+                                                                            <h6 class="mb-0 font-russo text-grey mt-1">AVG. KD</h6>
+                                                                        </div>
+                                                                        <div class="col-12">
+                                                                            <h4 class="font-russo mb-0 text-white mb-2 mt-1">{{match.attributes.avgKd.kd}}</h4> <!--KD DE LA PARTIDA-->
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div *ngSwitchCase = "'PLATINUM'">
+                                                                <div class=" text-center bg-platinum radius-10">
+                                                                    <div class="row">
+                                                                        <div class="col-12">
+                                                                            <h6 class="mb-0 font-russo text-grey mt-1">AVG. KD</h6>
+                                                                        </div>
+                                                                        <div class="col-12">
+                                                                            <h4 class="font-russo mb-0 text-white mb-2 mt-1">{{match.attributes.avgKd.kd}}</h4> <!--KD DE LA PARTIDA-->
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div *ngSwitchCase = "'GOLD'">
+                                                                <div class=" text-center bg-gold radius-10">
+                                                                    <div class="row">
+                                                                        <div class="col-12">
+                                                                            <h6 class="mb-0 font-russo text-grey mt-1">AVG. KD</h6>
+                                                                        </div>
+                                                                        <div class="col-12">
+                                                                            <h4 class="font-russo mb-0 text-white mb-2 mt-1">{{match.attributes.avgKd.kd}}</h4> <!--KD DE LA PARTIDA-->
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div *ngSwitchCase = "'SILVER'">
+                                                                <div class=" text-center bg-silver radius-10">
+                                                                    <div class="row">
+                                                                        <div class="col-12">
+                                                                            <h6 class="mb-0 font-russo text-grey mt-1">AVG. KD</h6>
+                                                                        </div>
+                                                                        <div class="col-12">
+                                                                            <h4 class="font-russo mb-0 text-white mb-2 mt-1">{{match.attributes.avgKd.kd}}</h4> <!--KD DE LA PARTIDA-->
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            
+                                                            <div *ngSwitchCase = "'BRONZE'">
+                                                                <div class=" text-center bg-bronze radius-10">
+                                                                    <div class="row">
+                                                                        <div class="col-12">
+                                                                            <h6 class="mb-0 font-russo text-grey mt-1">AVG. KD</h6>
+                                                                        </div>
+                                                                        <div class="col-12">
+                                                                            <h4 class="font-russo mb-0 text-white mb-2 mt-1">{{match.attributes.avgKd.kd}}</h4> <!--KD DE LA PARTIDA-->
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-9">
+                                                <div class="row">
+                                                    <div class="col-2">
+                                                        <div class="row">
+                                                            <div class="col-12">
+                                                                <h5 class="text-center mb-0 font-russo text-white">KILLS</h5>
+                                                            </div>
+                                                            <div class="col-12">
+                                                                <h4 class="text-center font-russo text-white mt-2">{{match.segments[0].stats.kills.displayValue}}</h4>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-2">
+                                                        <div class="row">
+                                                            <div class="col-12">
+                                                                <h5 class="text-center mb-0 font-russo text-white">DEATHS</h5>
+                                                            </div>
+                                                            <div class="col-12">
+                                                                <h4 class="text-center font-russo text-white mt-2">{{match.segments[0].stats.deaths.displayValue}}</h4>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-2">
+                                                        <div class="row">
+                                                            <div class="col-12">
+                                                                <h5 class="text-center mb-0 font-russo text-white">MATCH KD</h5>
+                                                            </div>
+                                                            <div class="col-12">
+                                                                <h4 class="text-center font-russo text-white mt-2">{{match.segments[0].stats.kdRatio.displayValue}}</h4>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-2">
+                                                        <div class="row">
+                                                            <div class="col-12">
+                                                                <h5 class="text-center mb-0 font-russo text-white ">HEAD SHOTS</h5>
+                                                            </div>
+                                                            <div class="col-12">
+                                                                <h4 class="text-center font-russo text-white mt-2">{{match.segments[0].stats.headshots.displayValue}}</h4>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-2">
+                                                        <div class="row">
+                                                            <div class="col-12">
+                                                                <h5 class="text-center mb-0 font-russo text-white">DAMAGE DEALT</h5>
+                                                            </div>
+                                                            <div class="col-12">
+                                                                <h4 class="text-center font-russo text-white mt-2">{{match.segments[0].stats.damageDone.displayValue}}</h4>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-2">
+                                                        <div class="row">
+                                                            <div class="col-12">
+                                                                <h5 class="text-center mb-0 font-russo text-white">GULAJ</h5>
+                                                            </div>
+                                                            <div *ngIf ="match.segments[0].stats.gulagKills.displayValue == 1;" >
+                                                                <div class="col-12">
+                                                                    <h5 class="text-center font-russo text-white"><i class="fas fa-check-circle mt-1 text-green"></i></h5>
+                                                                </div>
+                                                            </div>
+                                                            <div *ngIf ="match.segments[0].stats.gulagKills.displayValue == 0;" >
+                                                                <div class="col-12">
+                                                                    <h5 class="text-center font-russo text-white"><i class="fas fa-times-circle mt-1 text-red"></i></h5>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <button class="btn btn-primary"> Load more</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+</div>

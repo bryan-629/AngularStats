@@ -1,0 +1,103 @@
+.text-red{
+    color: rgb(196, 45, 45);
+}
+.text-14{
+    font-size: 14px;
+}
+.lupa{
+font-size: 25px;
+}
+.slide{
+background: rgb(240,84,130);
+    background: linear-gradient(211deg, rgba(240,84,130,1) 0%, rgba(226,38,19,1) 100%);
+    box-shadow:  1px 1px 30px 0px rgba(226, 38, 19, 0.75);
+    height: 800px;
+    border-radius: 10px;
+    position: fixed;
+}
+.bg-gold{
+background: #E4A400;
+}
+.text-gold{
+color: #E4A400;
+}
+.bg-legend{
+background: rgb(240,84,130);
+    background: linear-gradient(211deg, rgba(88,37,155,1) 0%, rgba(251,153,1,1) 100%);
+}
+.text-legend{
+color: #a35a54;
+}
+.bg-master{
+background: rgb(240,84,130);
+    background: linear-gradient(211deg, rgba(198,83,234,1) 0%, rgba(62,29,129,1) 100%);
+}
+.text-master{
+color: rgb(119, 67, 204)
+}
+.bg-platinum{
+background-color: #5081A0;
+}
+.text-platinum{
+color: #5081A0;
+}
+.bg-bronze{
+background-color: #BE6F26;
+}
+.text-bronze{
+color: #BE6F26;
+}
+.roboto{
+font-family: 'Roboto', sans-serif; 
+font-weight: bold;
+}
+.bg-diamante{
+background-color: #2ECACA;
+}
+.title{
+font-family: 'Russo One', sans-serif; 
+    font-weight: bold;
+    color: #3D3D3D;
+}
+.bg-white{
+background-color: white;
+}
+.font-russo{
+font-family: 'Russo One', sans-serif; 
+}
+.radius-10{
+border-radius: 10px ;
+}
+.text-diamante{
+color: #2ECACA;
+}
+.fa-question{
+font-size: 20px;
+}
+.bg-content{
+background-color: #27293D;
+}
+.chart1{
+height: 250px;
+}
+.text-gray{
+color: #939393;
+}
+.bg-gray{
+background: #939393;
+}
+.text-grey{
+color:#444444;
+}
+.text-green{
+color: #82c91e;
+}
+.match-data{
+cursor: pointer;
+}
+.bg-silver{
+background-color: #a0afb8;
+}
+.text-silver{
+color:#a0afb8;
+}
